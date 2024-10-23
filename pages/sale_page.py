@@ -3,6 +3,7 @@ from pages.base_page import BasePage
 from pages.locators.locators import SalePage as loc
 
 
+@allure.suite('Sale page')
 class SalePage(BasePage):
     relative_url = 'sale.html'
 

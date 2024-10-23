@@ -3,6 +3,7 @@ from pages.base_page import BasePage
 from pages.locators.locators import EcoFriendlyPage as loc
 
 
+@allure.suite('Eco friendly page')
 class EcoFriendlyPage(BasePage):
     relative_url = 'collections/eco-friendly.html'
 

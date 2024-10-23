@@ -4,6 +4,7 @@ from pages.locators.locators import CreatePage as loc
 from selenium.webdriver.common.keys import Keys
 
 
+@allure.suite('Create page')
 class CreatePage(BasePage):
     relative_url = 'customer/account/create/'
 
