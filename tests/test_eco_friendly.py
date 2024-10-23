@@ -13,7 +13,7 @@ def test_img_cards(eco_friendly_page):
     eco_friendly_page.check_img_cards()
 
 
-@pytest.mark.regression
+@pytest.mark.smoke
 def test_stars_rating(eco_friendly_page):
     eco_friendly_page.open()
     eco_friendly_page.check_stars_rating()

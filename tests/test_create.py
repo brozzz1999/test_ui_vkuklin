@@ -71,6 +71,7 @@ def test_valid_password(create_page):
     create_page.check_password_valid()
 
 
+@pytest.mark.smoke
 def test_not_valid_confirm_pas(create_page):
     create_page.open()
     create_page.fill_first_name(first_name)
