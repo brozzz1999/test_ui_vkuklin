@@ -27,3 +27,6 @@ jobs:
           python-version: "3.10"
       - name: Install dependancies
         run: pip install -r requirements.txt
+      - name: Run all tests
+        if: "github.event.inputs.deployment_target == 'all'"
+        run: cd tests_UI_eokulik_selenium && pytest -v 
